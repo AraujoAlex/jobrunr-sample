@@ -25,7 +25,7 @@ public class JobRunrSample {
 
         String strSum = String.format("%s: A soma de %s+%s é: %s", processID, firstNumber, secondNumber, sum);
         System.out.println(strSum);
-        System.out.println(String.format("%s: Termino (%s)", processID, LocalDateTime.now().toLocalTime()));
+        System.out.println(String.format("%s: Término (%s)", processID, LocalDateTime.now().toLocalTime()));
     }
 
     public void processWithSleep(int seconds) throws InterruptedException {
@@ -34,6 +34,6 @@ public class JobRunrSample {
         TimeUnit.SECONDS.sleep(seconds);
         this.processID = processID;
         this.processSumRandomNumbers();
-        System.out.println(String.format("%s: Termino com Sleep (%s)", processID, LocalDateTime.now().toLocalTime()));
+        System.out.println(String.format("%s: Término com Sleep (%s)", processID, LocalDateTime.now().toLocalTime()));
     }
 }
